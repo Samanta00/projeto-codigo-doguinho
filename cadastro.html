@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/INTER/estilos/reset.css">
+    <link rel="stylesheet" href="/INTER/estilos/estilo-form.css">
+    <link rel="stylesheet" href="/INTER/estilos/cadastro.css">
+    <link rel="stylesheet" href="/INTER/estilos/inputs.css">
+    <link rel="stylesheet" href="/INTER/estilos/cartao.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="login__usuario--perfil" width="350px" src="/INTER/images/imagem-do-usuario-com-fundo-preto.png" alt="">
+    </header>
+
+    <section class="informacoes__cadastro">
+        <form action="../src/home.html">
+
+            <fieldset>
+
+                <legend class="formulario_cadastro" Informações básicas></legend>
+
+             
+
+                
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
+                        <label class="input-label" for="nome">Nome</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+            
+
+               
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Endereço" required>
+                        <label class="input-label" for="nome">Endereço</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+
+                  
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Telefone" required>
+                        <label class="input-label" for="nome">Telefone</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+
+                   
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Email" required>
+                        <label class="input-label" for="nome">Email</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+  
+
+
+              
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?!.*[ ,´`^]).{8,16}$" 
+                        type="text" placeholder="senha" required
+                        title="A senha deve ser entre 8 á 16 digitos, deve conter uma letra maiuscula, uma letra minuscula e algum simbolo">
+
+                        <label class="input-label" for="nome">senha</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+
+     
+            </fieldset>
+
+            
+            <button class="input__cadastro input__cadastro--botao">Criar conta</button>
+        </form>
+    </section>
+</body>
+</html>
